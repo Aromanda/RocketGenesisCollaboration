@@ -1,3 +1,22 @@
+/* Change font for all ps */
 p {
     font-family: 'Noto Serif', serif;
+}
+
+/* Change all h2 color */
+#portfolio h2 {
+    color: #0a65a0;
+}
+
+#bz_phone {
+    color: #0a65a0;
+}
+
+h2 {
+    color: #0a65a0;
+}
+
+#team {
+    background-color: #0a65a0;
+    color: white;
 }
