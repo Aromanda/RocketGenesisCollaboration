@@ -24,3 +24,12 @@ h2 {
 #employee_section {
     color: white;
 }
+
+#portfolio .img-fluid {
+    width: 265px;
+    height: 150px;
+}
+
+#contact .samedi {
+    color: red;
+}
