@@ -224,36 +224,46 @@ buildingType_select.addEventListener("change", function () {
 
 
 // essai pour changer background color 
-    let backgroundcolor = document.getElementById('cards')
+    let backgroundcolor1 = document.getElementById('card1')
+    let backgroundcolor2 = document.getElementById('card2')
+    let backgroundcolor3 = document.getElementById('card3')
+    let backgroundcolor4 = document.getElementById('card4')
+
     let step1_ecriture = document.getElementById('step1')
-/*
-if (buildingType === 'residential') {
-   console.log(residentialcolor);
-} else if (buildingType === 'commercial') {
-    console.log(commercialcolor);
-} else (buildingType === 'industrial') 
-    console.log(industrialcolor);
-*/
+    let step2_ecriture = document.getElementById('step2')
+    let step3_ecriture = document.getElementById('step3')
+    let step4_ecriture = document.getElementById('step4')
 
 //eventlistener 
     buildingType_select.addEventListener("change", function() {
         var buildingType = buildingType_select.value; 
 
         if (buildingType === 'residential') {
-            backgroundcolor.style.backgroundColor = '#0a65a0';
+            backgroundcolor1.style.backgroundColor = '#0a65a0';
+            backgroundcolor2.style.backgroundColor = '#0a65a0';
+            backgroundcolor3.style.backgroundColor = '#0a65a0';
+            backgroundcolor4.style.backgroundColor = '#0a65a0';
             step1_ecriture.style.color = '#414141';
+            step2_ecriture.style.color = '#414141';
+            step3_ecriture.style.color = '#414141';
+            step4_ecriture.style.color = '#414141';
             console.log(buildingType)
          } else if (buildingType === 'commercial') {
-            backgroundcolor.style.backgroundColor = '#A94545';
+            backgroundcolor1.style.backgroundColor = '#A94545';
+            backgroundcolor2.style.backgroundColor = '#A94545';
+            backgroundcolor3.style.backgroundColor = '#A94545';
+            backgroundcolor4.style.backgroundColor = '#A94545';
             step1_ecriture.style.color = '#0a65a0';
+            step2_ecriture.style.color = '#0a65a0';
+            step3_ecriture.style.color = '#0a65a0';
             console.log(buildingType)
          } else if (buildingType === 'industrial') { 
-         backgroundcolor.style.backgroundColor = '#767676';
+            backgroundcolor1.style.backgroundColor = '#767676';
+            backgroundcolor2.style.backgroundColor = '#767676';
+            backgroundcolor3.style.backgroundColor = '#767676';
+            backgroundcolor4.style.backgroundColor = '#767676';
          console.log(buildingType);
         } else if (buildingType === 'select') 
-        backgroundcolor.style.backgroundColor = '#f8f9fa';
+        backgroundcolor1.style.backgroundColor = '#f8f9fa';
         })
 
-/* Color reference
-'rgb(' + 10 + ',' + 101 + ',' + 160 + ')'
-'rgb(' + 170 + ',' + 69 + ',' + 69 + ')' */
