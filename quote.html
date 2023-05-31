@@ -125,16 +125,16 @@
 					<form class="validate" id="quote-form">
 
 						<div class="select-building-type card card-default">
-							<div class="card-heading card-heading-transparent">
+							<div id="cards" class="card-heading card-heading-transparent">
 								<label for="building-type" class="card-title"> 
 									<h3>
-										<span style="color:rgb(10, 101, 160); font-weight:bolder">STEP 1 |</span> Select Type of Building
+										<span id="step1" value="step1" style="color:rgb(10, 101, 160); font-weight:bolder">STEP 1 |</span> Select Type of Building
 									</h3> 
 								</label>
 							</div>
 							<div class="card-block" style="margin: 20px">
 								<select name="building-type" id="building-type" class="form-control pointer required">
-									<option>---Select---</option>
+									<option id="select" value="select">---Select---</option>
 									<option id="residential" value="residential">Residential</option>
 									<option id="commercial" value="commercial">Commercial</option>
 									<option id="industrial" value="industrial">Industrial</option>
