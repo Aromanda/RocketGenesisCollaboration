@@ -221,3 +221,39 @@ buildingType_select.addEventListener("change", function () {
         });
     }
 });
+
+
+// essai pour changer background color 
+    let backgroundcolor = document.getElementById('cards')
+    let step1_ecriture = document.getElementById('step1')
+/*
+if (buildingType === 'residential') {
+   console.log(residentialcolor);
+} else if (buildingType === 'commercial') {
+    console.log(commercialcolor);
+} else (buildingType === 'industrial') 
+    console.log(industrialcolor);
+*/
+
+//eventlistener 
+    buildingType_select.addEventListener("change", function() {
+        var buildingType = buildingType_select.value; 
+
+        if (buildingType === 'residential') {
+            backgroundcolor.style.backgroundColor = '#0a65a0';
+            step1_ecriture.style.color = '#414141';
+            console.log(buildingType)
+         } else if (buildingType === 'commercial') {
+            backgroundcolor.style.backgroundColor = '#A94545';
+            step1_ecriture.style.color = '#0a65a0';
+            console.log(buildingType)
+         } else if (buildingType === 'industrial') { 
+         backgroundcolor.style.backgroundColor = '#767676';
+         console.log(buildingType);
+        } else if (buildingType === 'select') 
+        backgroundcolor.style.backgroundColor = '#f8f9fa';
+        })
+
+/* Color reference
+'rgb(' + 10 + ',' + 101 + ',' + 160 + ')'
+'rgb(' + 170 + ',' + 69 + ',' + 69 + ')' */
