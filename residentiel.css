@@ -1,0 +1,11 @@
+  .container titleagent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #tableagent {
+    margin-top: 20px;
+  }
+
+
