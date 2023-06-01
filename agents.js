@@ -1,17 +1,8 @@
-var agents = [
-    {"first_name":"Orlando","last_name":"Perez","email":"perez@rocket.elv","region":"north","rating":"95","fee":"10000"},
-    {"first_name":"Elmar","last_name":"Fade","email":"elmar@rocket.elv","region":"south","rating":"95","fee":"10000"},
-    {"first_name":"Zed","last_name":"Roles","email":"zebra@rocket.elv","region":"north","rating":"100","fee":"4321"},
-    {"first_name":"Brian","last_name":"Bossman","email":"papi@rocket.elv","region":"south","rating":"100","fee":"10001"}
-  ];
+function populateAgentTable(data) {
+  var tableBody = document.getElementById("agentTableBody");
+  tableBody.innerHTML = "";
 
-  var bestAgents = agents.filter(function(agent) {
-    return agent.rating >= 95;
-  });
-
-  var tableBody = document.querySelector("#tableagent tbody");
-
-  bestAgents.forEach(function(agent, index) {
+  data.forEach(function(agent, index) {
     var row = document.createElement("tr");
     row.innerHTML = `
       <th scope="row">${index + 1}</th>
@@ -23,4 +14,15 @@ var agents = [
     `;
     tableBody.appendChild(row);
   });
+}
 
+// Make a GET request to retrieve the agent data
+fetch("http://99.79.77.144:3000/api/agents")
+  .then(response => response.json())
+  .then(data => {
+    var filteredAgents = data.filter(function(agent) {
+      return agent.rating >= 95;
+    });
+    populateAgentTable(filteredAgents);
+  })
+  .catch(error => console.error("Error:", error));
