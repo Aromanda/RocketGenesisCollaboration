@@ -267,3 +267,5 @@ buildingType_select.addEventListener("change", function () {
         backgroundcolor1.style.backgroundColor = '#f8f9fa';
         })
 
+
+
