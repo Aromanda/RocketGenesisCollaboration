@@ -782,53 +782,53 @@
 									<input type="hidden" name="action" value="contact_send" />
 
 									<div class="row">
-											<div class="col-md-4">
-												<label for="name">Full Name*</label>
-												<input id="name" type="text" value="" class="form-control" name="contact[name]" required>
+											<div id="full-name" class="col-md-4">
+												<label for="fullName">Full Name*</label>
+												<input id="fullName" type="text" value="" class="form-control" name="fullName" required>
 											</div>
-											<div class="col-md-4">
+											<div id="e-mail" class="col-md-4">
 												<label for="email">E-mail Address*</label>
-												<input id="email" type="email" value="" class="form-control" name="contact[email]" required>
+												<input id="email" type="email" value="" class="form-control" name="email" required>
 											</div>
-											<div class="col-md-4">
+											<div id="telephone" class="col-md-4">
 												<label for="phone">Phone*</label>
-												<input id="phone" type="text" value="" class="form-control" name="contact[phone] " required>
+												<input id="phone" type="text" value="" class="form-control" name="phone" required>
 											</div>
 									</div>
-                                    <div class="row">
+                                    <div id="company-name" class="row">
                                         <div class="col-md-6">
-                                            <label for="company_name">Company Name*</label>
-                                            <input id="name"  type="text" value="" class="form-control" name="contact[name]" required>
+                                            <label for="companyName">Company Name*</label>
+                                            <input id="companyName"  type="text" value="" class="form-control" name="companyName" required>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div id="project-name" class="col-md-6">
                                             <label for="project_name">Project Name*</label>
-                                            <input id="project_name"  type="text" value="" class="form-control" name="contact[name]" required>
+                                            <input id="project_name"  type="text" value="" class="form-control" name="projectName" required>
                                         </div>
                                     </div>
 									<div class="row">
-											<div class="col-md-6">
+											<div id="project-description" class="col-md-6">
                                                 <label for="project_description">Project Description*</label>
-												<input id="project_description"  type="text" value="" class="form-control" name="contact[subject]" required>
+												<input id="project_description"  type="text" value="" class="form-control" name="projectDescription" required>
 											</div>
-											<div class="col-md-6">
+											<div id="Departements" class="col-md-6">
 												<label for="department">Department*</label>
-												<select id="department" class="form-control pointer" name="contact[department]" required>
+												<select id="department" class="form-control pointer" name="department" required>
 													<option value="">--- Select ---</option>
 													<option value="Marketing">Commercial</option>
 													<option value="Webdesign">Residential</option>
 												</select>
 											</div>
 									</div>
-									<div class="row">
+									<div id="lesmessages" class="row">
 											<div class="col-md-12">
 												<label for="message">Message*</label>
-												<textarea id="message"  maxlength="10000" rows="8" class="form-control" name="contact[message]" required></textarea>
+												<textarea id="message"  maxlength="10000" rows="8" class="form-control" name="message" required></textarea>
 											</div>
 									</div>
-									<div class="row">
+									<div id="lesattachements" class="row">
 											<div class="col-md-12">
 												<label for="attachment">File Attachment</label>
-												<input id="attachment" class="custom-file-upload" type="file" name="contact[attachment]"  data-btn-text="Select a File" accept="image/png, image/jpeg, image/png"/>
+												<input id="attachment" class="custom-file-upload" type="file" name="attachment"  data-btn-text="Select a File" accept="image/png, image/jpeg, image/png"/>
 												<small class="text-muted block">
                                                     Max file size: 10Mb (zip/pdf/jpg/png)
                                                 </small>
@@ -839,7 +839,7 @@
 
 								<div class="row">
 									<div class="col-md-12">
-										<button type="submit" class="btn btn-primary btn-lg"><i class="fa fa-check"></i> SEND MESSAGE</button>
+										<button id="submit" type="submit" class="btn btn-primary btn-lg"><i class="fa fa-check"></i> SEND MESSAGE</button>
 									</div>
 								</div>
 							</form>
@@ -988,17 +988,17 @@
 
 		<script src="assets/js/contact.js"></script>
 
-		<script type="text/javascript">
-			$("#contact-form").on("submit", function(e){
-				e.preventDefault();
-				$("#success-message").modal("show");
-				this.reset();
-			});
-			$("#subscribe-form").on("submit", function(e){
-				e.preventDefault();
-				$("#subscribe-message").modal("show");
-				this.reset();
-			});
-		</script>
+		 <script type="text/javascript">
+		//	$("#contact-form").on("submit", function(e){
+		//		e.preventDefault();
+		//		$("#success-message").modal("show");
+		//		this.reset();
+		//	});
+		//	$("#subscribe-form").on("submit", function(e){
+		//		e.preventDefault();
+		//		$("#subscribe-message").modal("show");
+		//		this.reset();
+		//	}); 
+		</script> 
 	</body>
 </html>
