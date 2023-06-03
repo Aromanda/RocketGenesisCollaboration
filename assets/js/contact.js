@@ -42,7 +42,7 @@ contact_form.addEventListener("submit", async(e) => {
 		project_desc: project_description_select.value,
 		department: department_select.value,
 		message: message_select.value,
-		file: null,
+		file: attachment_select.value,
 	};
 
 	await fetch('http://99.79.77.144:3000/api/contact', {
