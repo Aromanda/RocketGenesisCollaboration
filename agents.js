@@ -16,20 +16,6 @@ function populateAgentTable(data) {
   });
 }
 
-/* Make a GET request to retrieve the agent data
-fetch("http://99.79.77.144:3000/api/agents")
-  .then(response => response.json())
-  .then(data => {
-    var filteredAgents = data.filter(function(agent) {
-      return agent.rating >= 95;
-    });
-    populateAgentTable(filteredAgents);
-  })
-  .catch(error => console.error("Error:", error));
-*/
-
-  // Function to filter agents by region and update the table
- // Function to filter agents by region and update the table
 function filterAgentsByRegion(region) {
   fetch("http://99.79.77.144:3000/api/agents")
     .then(response => response.json())
