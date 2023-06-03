@@ -473,7 +473,7 @@
 
 
 
-			<!-- BOX pour AGENTS -->
+			<!-- Tableau pour AGENTS -->
 
 			<div class="container" id="titleagent">
 				<h2 class="m-0" id="agents" style="padding-bottom: 1%;">
@@ -482,13 +482,28 @@
 
 				<table id="tableagent" class="table">
 					<thead>
-					  <tr>
+					  <tr id="colonne">
 						<th scope="col">#</th>
 						<th scope="col">First Name</th>
 						<th scope="col">Last Name</th>
 						<th scope="col">Rating</th>
 						<th scope="col">Fee</th>
-						<th scope="col">Region</th>
+						<th scope="col">
+							<div id="menu deroulant" class="dropdown">
+								<button style="background-color:rgb(170, 69, 69)" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Region
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#" data-region="all">All Regions</a>
+									<a class="dropdown-item" href="#" data-region="north">North</a>
+									<a class="dropdown-item" href="#" data-region="south">South</a>
+								  </div>
+							<!--	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#" onclick="sortAgentsByRegion('all')">All Regions</a>
+									<a id="north" class="dropdown-item" href="#" onclick="sortAgentsByRegion('north')">North</a>
+									<a id="south" class="dropdown-item" href="#" onclick="sortAgentsByRegion('south')">South</a>
+								</div> -->
+							</div>
 					  </tr>
 					</thead>
 					<tbody id="agentTableBody">
