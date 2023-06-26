@@ -20,15 +20,15 @@ let contact_form = document.getElementById("contact-form")
 contact_form.addEventListener("submit", async(e) => { 
 	e.preventDefault();
 	
-	let fullname_select = document.querySelector('[name="fullName"]')
-	let email_select = document.querySelector('[name="email"]')
-	let phone_select = document.querySelector('[name="phone"]')
-	let company_name_select = document.querySelector('[name="companyName"]')
-	let project_name_select = document.querySelector('[name="projectName"]')
-	let project_description_select = document.querySelector('[name="projectDescription"]')
-	let department_select = document.querySelector('[name="department"]')
-	let message_select = document.querySelector('[name="message"]')
-	let attachment_select = document.querySelector('[name="attachment"]')
+	let fullname_select = document.querySelector('[id="fullName"]')
+	let email_select = document.querySelector('[id="email"]')
+	let phone_select = document.querySelector('[id="phone"]')
+	let company_name_select = document.querySelector('[id="companyName"]')
+	let project_name_select = document.querySelector('[id="projectName"]')
+	let project_description_select = document.querySelector('[id="projectDescription"]')
+	let department_select = document.querySelector('[id="department"]')
+	let message_select = document.querySelector('[id="message"]')
+	let attachment_select = document.querySelector('[id="attachment"]')
 	
 	
 	
