@@ -46,27 +46,20 @@ contact_form.addEventListener("submit", async(e) => {
 	};
 
 	await fetch('http://99.79.77.144:3000/api/contact', {
-		method: 'POST',
-		headers: {
-			'Content-Type': 'application/json',
-		},
-		body: JSON.stringify(data),
-	})
-	.then((response) => {
-		if (response.ok) {
-			console.log(response)
-			console.log('This is the response status code : ', response.status);
-			alert('Success:' + JSON.stringify(data));
-		} else {
-			console.error('Error:', response.status)
-		}
-	  })
-	  .then((data) => {
-	    console.log('Success:', data);
-	  })
-	  .catch((error) => {
-		alert('Error:' + error);
-	    console.error('Error:', error);
-	  });
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+        .then((response) => response.json())
+        .then((data) => {
+            console.log('Success:', data);
+            alert('Success:' + JSON.stringify(data));
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            alert('Error:' + error);
+        });
 });
 
